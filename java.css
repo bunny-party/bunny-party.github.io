@@ -1,0 +1,156 @@
+/*animations and js*/
+#image01{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out 0.2s;
+    animation-timing-function: ease-in-out 0.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    display: inline-block;
+    z-index:9;}
+     
+    #image01:hover{
+    animation-name: bounce;
+    -moz-animation-name: bounce;}
+     
+    @keyframes bounce{
+    0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)}
+     
+    40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px)}
+     
+    60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px)}
+    }
+    
+    #musicplayer{
+        background:url(/img/bg/flowerswhite.gif); /* background color of player */
+        border:0px solid #e74492; /* border around player */
+        width: 100%; /* width of the player */
+        
+    }
+
+    .songtitle{
+        padding:5px 0px; /* padding around song title */
+        border-bottom:2px ridge #ff8ce6; /* border under song title */
+        display:block;
+        text-shadow: 0px 0px 3px rgba(255,255,255,1), 0px 0px 3px rgba(255,255,255,1), 0px 0px 3px rgba(255,255,255,1), 0px 0px 3px rgba(255,255,255,1);
+    }
+
+    .controls{
+        font-size:18px !important; /* size of controls */
+        background-color:#fff; /* background color of controls */
+        text-align:center;
+        width:100%;
+    }
+
+    .controls td{
+        padding:8px 5px 0px 5px; /* padding around controls */
+    }
+
+    .seeking{
+        background-color:#fff; /* background color of seeking bar */
+        display:flex;
+        justify-content: space-evenly;
+        padding:5px; /* padding around seeking bar */
+    }
+
+    .current-time{
+        padding-right:5px;
+        padding-top: 3px;
+    }
+
+    .total-duration{
+        padding-left:5px;
+        padding-top: 3px;
+    }
+
+    i.fas:hover{
+        cursor:help;
+    }
+
+    i.fas.fa-pause, i.fas.fa-play, i.fas.fa-forward, i.fas.fa-backward{
+        color:#8cdcff; /* color of controls */
+    }
+    
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        background-color:#fff; /* background color of seeking bar - make the color same as .seeking background color */
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+    
+    /* settings for chrome browsers */
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: inherit;
+        background: #b5f396; /* color of seeking track */
+        border : 2px ridge #ffaaf4;
+        border-radius: 15px;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        height: 10px; /* height of seeking square */
+        width: 10px; /* width of seeking square */
+        border-radius: 5px; /* change to 5px if you want a circle seeker */
+        background: #ff8ce6; /* color of seeker square */
+        cursor: grab;
+        border:none;
+        box-shadow: -1px -1.4px 1px inset rgba(219, 86, 197,0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(219, 86, 197,0.5), 1px 1px 3px rgba(219, 86, 197,0.5);
+    }
+
+    input[type=range]::-webkit-slider-thumb:active {
+        cursor:grabbing
+    }
+    
+    /* settings for firefox browsers */
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: inherit;
+        background: #b5f396; /* color of seeking track */
+        border : 2px ridge #ffaaf4;
+        border-radius: 15px;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 10px; /* height of seeking square */
+        width: 10px; /* width of seeking square */
+        border-radius: 5px; /* change to 5px if you want a circle seeker */
+        background: #ff8ce6; /* color of seeker square */
+        cursor: grab;
+        border:none;
+        box-shadow: -1px -1.4px 1px inset rgba(219, 86, 197,0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(219, 86, 197,0.5), 1px 1px 3px rgba(219, 86, 197,0.5);
+    }
+
+    input[type=range]::-moz-range-thumb:active {
+        cursor:grabbing
+    }
+
+.lebounce mark { z-index: 99; animation: bounce 2.5s infinite; animation-timing-function: cubic-bezier(0.25, 0.85, 0.4, 1) width:auto; background: none; color: inherit}
+ 
+.lebounce mark:nth-child(1) { animation-delay:0s; display:inline-block;}
+.lebounce mark:nth-child(2) { animation-delay:0.2s; display:inline-block;}
+.lebounce mark:nth-child(3) { animation-delay:0.4s; display:inline-block; }
+.lebounce mark:nth-child(4) { animation-delay:0.6s; display:inline-block;}
+.lebounce mark:nth-child(5) { animation-delay:0.8s; display:inline-block;}
+.lebounce mark:nth-child(6) { animation-delay:1s; display:inline-block;}
+.lebounce mark:nth-child(7) { animation-delay:1.2s; display:inline-block;}
+.lebounce mark:nth-child(8) { animation-delay:1.4s; display:inline-block;}
+.lebounce mark:nth-child(9) { animation-delay:1.6s; display:inline-block;}
+.lebounce mark:nth-child(10) { animation-delay:1.8s; display:inline-block;}
+ 
+@keyframes bounce { 0% { transform: scale(1,1) translateY(0); } 10% { transform: scale(1.1,.9) translateY(0); } 30% { transform: scale(.9,1.1) translateY(-10px); } 50% { transform: scale(1.05,.95) translateY(0); } 60% { transform: scale(1,1) translateY(-4px); } 100% { transform: scale(1,1) translateY(0); } }

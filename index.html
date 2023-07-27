@@ -1,7 +1,299 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what the FUCK goes on a website</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/java.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/fonts.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+    <body>
+    <div class="contain">
+        
+        <div class="pageHeader">
+        <h1>
+            <div class="lebounce"><mark>b</mark><mark>u</mark><mark>n</mark><mark>n</mark><mark>y</mark><mark>p</mark><mark>a</mark><mark>r</mark><mark>t</mark><mark>y</mark></div>
+        </h1>
+        </div>
+        
+        <div class="pageHeaderSub">
+        <j>quicknav:</j> home - sitemap - 
+        </div>
+        
+        <div class="pageBarLeft">
+            <div class="pageBarLeftNav">
+                <div class="roundhead GR navhead">
+                    site info
+                </div>
+                <div class="navbutt">
+                    <div class="bullet GRB"></div> navigation
+                </div>
+                <div class="navbutt">
+                    <div class="bullet GRB"></div> navigation
+                </div>
+
+                <div class="roundhead BL navmid">
+                    site info
+                </div>
+                <div class="navbutt">
+                    <div class="bullet BLB"></div> navigation
+                </div>
+                <div class="navbutt">
+                    <div class="bullet BLB"></div> navigation
+                </div>
+
+                <div class="roundhead PW navmid">
+                    site info
+                </div>
+                <div class="navbutt">
+                    <div class="bullet PWB"></div> navigation
+                </div>
+                <div class="navbutt">
+                    <div class="bullet PWB"></div> navigation
+                </div>
+
+                <div class="roundhead PL navmid">
+                    site info
+                </div>
+                <div class="navbutt">
+                    <div class="bullet PLB"></div> navigation
+                </div>
+                <div class="navbutt">
+                    <div class="bullet PLB"></div> navigation
+                </div>
+
+                <div class="roundhead PI navmid" style="font-size:11px;">
+                    sozai collection
+                </div>
+                <div class="navbutt">
+                    <div class="bullet PIB"></div> navigation
+                </div>
+                <div class="navbutt">
+                    <div class="bullet PIB"></div> navigation
+                </div>
+
+                <div class="roundhead OR navend">
+                    that's all <img src="img/deco/cloversparkle.gif" class="pipi" height="19px">
+                </div>
+            </div>
+        </div>
+        
+        <div class="pageContent">
+        <img src="/img/deco/cloverbow.gif" style="float:left;margin-right:10px;margin-top:-4px;width:79px" class="pix"> hello and welcome to bunnyparty !!
+
+        <div id="conbot">
+        <img src="/i/angel.png" height="300px">
+        </div>
+        </div>
+        
+        <div class="pageBarRight">
+            <div class="pageBarRightTop">
+            <div class="roundhead PW">
+                 visitors
+            </div>
+            <!-- FC2 Counter  Starts here -->
+            <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89504420"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89504420" /></noscript>
+            <!-- FC2 Counter  Ends here -->
+            </div>
+
+            <div class="pageBarRightMid">
+                <!----- multiple song music player by adilene @ adilene.net !! source code: https://github.com/sayantanm19/js-music-player ----->
+                <div id="musicplayer">
+                    <div>
+                        <marquee scrollamount="6" class="songtitle"></marquee>
+                    </div>
+            
+                    <table class="controls">
+                        <tr>
+                            <td>
+                                <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+                            </td>
+                            <td>
+                                <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
+                            </td>
+                            <td>
+                                <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+                            </td>
+                        </tr>
+                    </table>
+            
+                    <div class="seeking">
+                        <div class="current-time">00:00</div>
+            
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            
+                        <div class="total-duration">0:00</div>
+                    </div>
+            
+                    <audio id="music" src=""></audio> 
+                </div>
+                
+                <script>
+                    // initiate variables
+                    let track_name = document.querySelector(".songtitle");
+            
+                    let playpause_btn = document.querySelector(".playpause-track");
+                    let next_btn = document.querySelector(".next-track");
+                    let prev_btn = document.querySelector(".prev-track");
+            
+                    let seek_slider = document.querySelector(".seek_slider");
+                    let curr_time = document.querySelector(".current-time");
+                    let total_duration = document.querySelector(".total-duration");
+            
+                    let track_index = 0;
+                    let isPlaying = false;
+                    let updateTimer;
+                    
+                    // create new audio element
+                    let curr_track = document.getElementById("music");
+                    
+                    //
+                    // DEFINE YOUR SONGS HERE!!!!!
+                    // MORE THAN FOUR SONGS CAN BE ADDED!!
+                    // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+                    // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+                    let track_list = [
+                        {
+                            name:"häschenparty – schnuffel",
+                            path:"/music/bunnyparty.mp3"
+                        },
+                        {
+                            name:"stereo love – edward maya",
+                            path:"/music/stereolove.mp3"
+                        },
+                        {
+                            name:"every time we touch – cascada",
+                            path:"/music/touch.mp3"
+                        },
+                        {
+                            name: "boom boom boom boom – vengaboys",
+                            path:"/music/boomX4.mp3",
+                        },
+                    ];
+                    //
+                    //
+                    //
+                    //
+                    //
+            
+                    function loadTrack(track_index) {
+                        clearInterval(updateTimer);
+                        resetValues();
+            
+                        // load a new track
+                        curr_track.src = track_list[track_index].path;
+                        curr_track.load();
+                        
+                        // update details of the track
+                        track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+            
+                        // set an interval of 1000 milliseconds for updating the seek slider
+                        updateTimer = setInterval(seekUpdate, 1000);
+                        
+                        // move to the next track if the current one finishes playing 
+                        curr_track.addEventListener("ended", nextTrack);
+                    }
+            
+                    // reset values
+                    function resetValues() {
+                        curr_time.textContent = "0:00";
+                        total_duration.textContent = "0:00";
+                        seek_slider.value = 0;
+                    }
+            
+                    // checks if song is playing
+                    function playpauseTrack() {
+                        if (!isPlaying) playTrack();
+                        else pauseTrack();
+                    }
+            
+                    // plays track when play button is pressed
+                    function playTrack() {
+                        curr_track.play();
+                        isPlaying = true;
+                        
+                        // replace icon with the pause icon
+                        playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
+                    }
+            
+                    // pauses track when pause button is pressed
+                    function pauseTrack() {
+                        curr_track.pause();
+                        isPlaying = false;
+                        
+                        // replace icon with the play icon
+                        playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
+                    }
+            
+                    // moves to the next track
+                    function nextTrack() {
+                        if (track_index < track_list.length - 1)
+                            track_index += 1;
+                        else track_index = 0;
+                        loadTrack(track_index);
+                        playTrack();
+                    }
+            
+                    // moves to the previous track
+                    function prevTrack() {
+                        if (track_index > 0)
+                            track_index -= 1;
+                        else track_index = track_list.length;
+                        loadTrack(track_index);
+                        playTrack();
+                    }
+            
+                    // seeker slider
+                    function seekTo() {
+                        seekto = curr_track.duration * (seek_slider.value / 100);
+                        curr_track.currentTime = seekto;
+                    }
+            
+                    function seekUpdate() {
+                        let seekPosition = 0;
+                        
+                        // check if the current track duration is a legible number
+                        if (!isNaN(curr_track.duration)) {
+                            seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                            seek_slider.value = seekPosition;
+                            
+                        // calculate the time left and the total duration
+                        let currentMinutes = Math.floor(curr_track.currentTime / 60);
+                        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+                        let durationMinutes = Math.floor(curr_track.duration / 60);
+                        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+                            
+                        // adding a zero to the single digit time values
+                        if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+                        if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+                        if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+                        if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+            
+                        curr_time.textContent = currentMinutes + ":" + currentSeconds;
+                        total_duration.textContent = durationMinutes + ":" + durationSeconds;
+                      }
+                    }
+                    
+                    // load the first track in the tracklist
+                    loadTrack(track_index);
+                </script>
+            </div>
+
+            <div class="pageBarRightBottom">
+            <img src="/img/ad/lgB2.gif">
+            </div>
+        </div>
+        
+        <div class="pageFooter">
+        bunnyparty
+        </div>
+        
+        <div class="pageFooterSub">
+        coding is fucking hard TT-TT
+        </div>
+    </div>
 </body>
 </html>
