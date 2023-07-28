@@ -339,3 +339,24 @@
     background-position: bottom 3px right 2px;
     box-shadow: -1px -1.2px 1px inset rgba(96, 85, 158, 0.8), 2px 3px 1.5px inset rgba(255,255,255,.8), 0px 0px 1px rgba(96, 85, 158,0.5), 1px 1px 2px rgba(96, 85, 158,0.5);
     }
+
+    .box20{
+    float: left;
+    background:url(/img/bg/paper.gif);
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5), 2px 2px 5px rgba(51, 31, 20, 0.5);
+    box-sizing:border-box;
+    margin:13px 2px; /* 中央寄せは0をautoに変更 */
+    padding:10px;
+    position:relative;
+    width:60%;
+    text-align: left;
+    border-radius: 3px;
+    }
+    .icon01 {
+    background:url(/img/deco/paperclip.png) no-repeat;
+    height:62px;
+    position:absolute;
+    right:5px;
+    top:-13px;
+    width:27px
+    }
