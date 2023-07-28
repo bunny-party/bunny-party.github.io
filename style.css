@@ -98,7 +98,7 @@
     #Cleft{
     float:right;
     width: 70.9%;
-    height: 290px;
+    height: auto;
     background-image: url("/img/bg/cork.jpg");
     background-size: cover;
     background-position: center center;
@@ -361,61 +361,48 @@
     width:27px
     }
 
-    .colorday{
-    float: left;
-    background:url(/img/bg/paper.gif);
-    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5), 2px 2px 5px rgba(51, 31, 20, 0.5);
-    box-sizing:border-box;
-    margin:13px 0px;
-    margin-left: 7px;
-    padding:10px;
-    position:relative;
-    width:37%;
-    text-align: center;
-    border-radius: 3px;
-    }
-
     .box11 {
+    background-color: transparent;
     float:left;
     margin:0px 0px;
     margin-left: 7px;
-    width:41%
+    width:41%;
     }
     .u01 {
-    background:url(/img/deco/f-ue.gif) repeat-x;
+    background:url(/img/deco/f-ue.png) repeat-x;
     height:45px;
     margin:0 50px
     }
     .s01 {
-    background:url(/img/deco/f-sita.gif) repeat-x;
+    background:url(/img/deco/f-sita.png) repeat-x;
     height:13px;
     margin:0 50px
     }
     .t01 {
-    background:url(/img/deco/f-tunagi-naka.gif) repeat-x;
+    background:url(/img/deco/f-tunagi-naka.png) repeat-x;
     height:48px;
     margin:0 50px
     }
     .box-top {
-    background-image:url(/img/deco/f-kado1.gif), url(/img/deco/f-kado2.gif);
+    background-image:url(/img/deco/f-kado1.png), url(/img/deco/f-kado2.png);
     background-position:top left, top right;
     background-repeat:no-repeat, no-repeat;
     height:45px
     }
     .box-center {
-    background-image:url(/img/deco/f-migi.gif), url(/img/deco/f-hidari.gif) , url(/img/deco/f-naka.gif);
+    background-image:url(/img/deco/f-migi.png), url(/img/deco/f-hidari.png) , url(/img/deco/f-naka.png);
     background-position:top right, top left, top center;
     background-repeat:repeat-y, repeat-y ,repeat;
     padding:0 10px
     }
     .box-bottom {
-    background-image:url(/img/deco/f-kado3.gif), url(/img/deco/f-kado4.gif);
+    background-image:url(/img/deco/f-kado3.png), url(/img/deco/f-kado4.png);
     background-position:top left, top right;
     background-repeat:no-repeat, no-repeat;
     height:13px
     }
     .box-tunagi {
-    background-image:url(/img/deco/f-tunagi-migi.gif), url(/img/deco/f-tunagi-hidari.gif);
+    background-image:url(/img/deco/f-tunagi-migi.png), url(/img/deco/f-tunagi-hidari.png);
     background-position:top right, top left;
     background-repeat:repeat-y, repeat-y;
     height:48px
