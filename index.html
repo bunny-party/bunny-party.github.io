@@ -131,7 +131,7 @@
              </sub>
             </div>
 
-            <div class="colorday">
+            <!--<div class="colorday">
                   Today's color of the day is <span id="currentColorValue"></span>:
                   <div id="colorDisplay" style="width:100%;height:100px;margin:5px 0px;border-radius:5px;filter: brightness(1.75);"></div>
                   <span style="font-size:10px;">Current generated RGB value:
@@ -194,7 +194,91 @@
                     // Start the live color change
                     updateColor();
                   </script>
-            </div>
+            </div>-->
+
+            <div class="box11">
+                <div class="box-top">
+                <div class="u01"></div>
+                </div>
+                    
+                <div class="box-center">
+                    Today's color of the day is <span id="currentColorValue"></span>:
+                    <div id="colorDisplay" style="width:100%;height:100px;margin:5px 0px;
+                    border-radius:5px;filter: brightness(1.75);"></div>
+                    <span style="font-size:13px;">Current RGB value:</span>
+                        <br><span id="currentRGBValue" style="font-size:12px;"></span>
+                      
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+                        <script>
+                          function getRandomColor(seed) {
+                            const rng = new Math.seedrandom(seed);
+                            const red = rng() * 155 + 100; // Restricting red to be at least 100 (out of 255)
+                            const green = rng() * 155 + 100; // Restricting green to be at least 100 (out of 255)
+                            const blue = rng() * 155 + 100; // Restricting blue to be at least 100 (out of 255)
+                            return `rgb(${red}, ${green}, ${blue})`;
+                          }
+                      
+                          function getCurrentTimePercentage() {
+                            const now = new Date();
+                            const hours = now.getHours();
+                            const minutes = now.getMinutes();
+                            const totalMinutes = hours * 60 + minutes;
+                            return totalMinutes / (24 * 60); // Get the percentage of the day passed (0 to 1)
+                          }
+                      
+                          function darkenColor(color, percentage) {
+                            const factor = 1 - percentage;
+                            const [r, g, b] = color.match(/\d+/g); // Extract RGB values from the color string
+                            const darkenedR = Math.round(r * factor);
+                            const darkenedG = Math.round(g * factor);
+                            const darkenedB = Math.round(b * factor);
+                            return `rgb(${darkenedR}, ${darkenedG}, ${darkenedB})`;
+                          }
+                      
+                          function updateColor() {
+                            const seed = getSeedFromDate();
+                            const color = getRandomColor(seed);
+                            const percentage = getCurrentTimePercentage();
+                            const darkenedColor = darkenColor(color, percentage);
+                            const colorDisplay = document.getElementById("colorDisplay");
+                            const currentColorValue = document.getElementById("currentColorValue");
+                            const currentRGBValue = document.getElementById("currentRGBValue");
+                      
+                            colorDisplay.style.backgroundColor = darkenedColor;
+                            currentColorValue.textContent = `(${seed})`;
+                            currentRGBValue.textContent = darkenedColor.substring(4, darkenedColor.length - 1);
+                      
+                            // Request the next animation frame
+                            requestAnimationFrame(updateColor);
+                          }
+                      
+                          function getSeedFromDate() {
+                            const now = new Date();
+                            const year = now.getFullYear();
+                            const month = now.getMonth() + 1; // Months are zero-indexed, so add 1
+                            const day = now.getDate();
+                      
+                            // Concatenate the year, month, and day to form the seed value
+                            return `${year}-${month}-${day}`;
+                          }
+                      
+                          // Start the live color change
+                          updateColor();
+                        </script>
+                </div>
+                    
+                <div class="box-tunagi">
+                <div class="t01"></div>
+                </div>
+                    
+                <div class="box-center">
+                    
+                </div>
+                    
+                <div class="box-bottom">
+                <div class="s01"></div>
+                </div>
+                </div>
         </div>
         </div>
         </div>
