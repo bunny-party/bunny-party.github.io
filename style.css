@@ -71,47 +71,45 @@
     }
     
     .pageContent{
-    background-color : #fff;
     float : left;
     clear : none;
-    height : 620px;
+    height : auto;
     width : 592px;
     margin : 0px 10px;
-    border : 2px ridge #ffaaf4;
     position : relative;
     overflow : hidden;
+    background:rgba(0, 0, 0, 0)
     }
     #contop{
-    width : 99%;
+    background-color : #fff;
+    width : 97%;
     height : auto;
     float : left;
     clear : both;
+    border : 2px ridge #ffaaf4;
     padding : 8px 7px 2px 7px;
-    }
-    #conbot{
-    width : 100%;
-    height : auto;
-    float : left;
-    clear : both;
-    border-top : 2px ridge #ffaaf4;
+    margin-bottom: 10px;
     }
     #Cleft{
-    float:right;
-    width: 70.9%;
+    float:left;
+    width: 71%;
     height: auto;
     background-image: url("/img/bg/cork.jpg");
     background-size: cover;
     background-position: center center;
-    border-right : 2px groove #ffaaf4;
+    border: 2px ridge #ffaaf4;
     padding: 5px;
     text-align: center;
+    margin-right: 10px;
     }
     #Cright{
-    float:right;
-    width: 27%;
-    height: 300px;
+    float:left;
+    width: 24.27%;
+    height: 354px;
+    border: 2px ridge #ffaaf4;
     background-image: url("/img/digipinkdither.png");
     background-size: cover;
+    background-position: center center;
     }
     
     .pageBarRight{
@@ -387,13 +385,40 @@
     background-image:url(/img/deco/f-kado1.png), url(/img/deco/f-kado2.png);
     background-position:top left, top right;
     background-repeat:no-repeat, no-repeat;
-    height:45px
+    height:42px
     }
     .box-center {
     background-image:url(/img/deco/f-migi.png), url(/img/deco/f-hidari.png) , url(/img/deco/f-naka.png);
     background-position:top right, top left, top center;
     background-repeat:repeat-y, repeat-y ,repeat;
     padding:0 10px
+    }
+    /* Styles for the wrapper of .box-center */
+    .box-center-wrapper {
+    /* Use flexbox to align the left and right parts of .box-center */
+    display: flex;
+    }
+  
+    /* Styles for the left part of .box-center */
+    .box-center-left {
+    background-image: url(/img/deco/f-hidari.png), url(/img/deco/f-naka.png);
+    background-position: top left, top center;
+    background-repeat: repeat-y, repeat;
+    padding: 0 10px;
+    padding-right: 3px;
+    flex: 1; /* Take up the available space inside the flex container */
+    filter: brightness(100%);
+    overflow-x: visible;
+    padding-bottom:5px;
+    }
+  
+    /* Styles for the right part of .box-center */
+    .box-center-right {
+    background-image: url(/img/deco/f-migi.png);
+    background-position: top right;
+    background-repeat: repeat-y;
+    width: 10%; /* Adjust as needed */
+    margin-left:-10px;
     }
     .box-bottom {
     background-image:url(/img/deco/f-kado3.png), url(/img/deco/f-kado4.png);
