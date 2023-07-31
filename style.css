@@ -362,6 +362,13 @@
     box-shadow: -1px -1.2px 1px inset rgba(96, 85, 158, 0.8), 2px 3px 1.5px inset rgba(255,255,255,.8), 0px 0px 1px rgba(96, 85, 158,0.5), 1px 1px 2px rgba(96, 85, 158,0.5);
     }
 
+    .CLleft{
+    float: left;
+    width:41%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    }
+
     .box20{
     float: left;
     background:url(/img/bg/paper.gif);
@@ -381,6 +388,41 @@
     right:5px;
     top:-13px;
     width:27px
+    }
+
+    .box21{
+    float: left;
+    background:url(/img/deco/f-naka.png);
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5), 2px 2px 5px rgba(51, 31, 20, 0.5);
+    box-sizing:border-box;
+    margin:12px 5px; /* 中央寄せは0をautoに変更 */
+    margin-right: 0px;
+    padding:10px;
+    position:relative;
+    width:26.2%;
+    text-align: left;
+    border-radius: 3px;
+    }
+
+    .box22{
+    float: left;
+    background-image:url(/img/deco/sticky2.gif);
+    background-size: auto;
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+    margin:10px 5px; /* 中央寄せは0をautoに変更 */
+    margin-right: 0px;
+    padding:10px;
+    position:relative;
+    width:142px;
+    height: 68px;
+    text-align: left;
+    margin-left:8px;
+    margin-bottom:0px;
+    }
+
+    .dropshadow {
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)) drop-shadow(2px 2px 4px rgba(51, 31, 20, 0.3));
     }
 
     .box11 {

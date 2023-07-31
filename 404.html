@@ -1,0 +1,211 @@
+<style>
+  .container {
+    width: 592px;
+  }
+  .float-container {
+    float: left;
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 0px; /* Add padding to create a gap between the divs */
+  }
+  .float-container:first-child {
+    width: 100%;
+  }
+  .float-container:nth-child(2) {
+    width: 70%;
+    height: auto;
+  }
+  .float-container:nth-child(3) {
+    width: 30%;
+    box-sizing: content-box;
+    background: rgba(0,0,0,0.5)
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .flex-item {
+    flex: 1 0 calc(33.33% - 20px);
+    margin: 10px;
+    background-color: lightblue;
+    border: 1px solid #000
+  }
+  .specific-item {
+    flex: 0 0 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background-color: lightcoral;
+    border: 1px solid #000
+  }
+</style>
+
+<link href="https://bunny-party.github.io//style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://bunny-party.github.io//java.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://bunny-party.github.io//fonts.css" rel="stylesheet" type="text/css" media="all">
+    
+<div id="Cleft" style="width:592px;height:auto;">
+  <div class="float-container">
+    <!-- First div with 100% width and auto height -->
+    <div class="roundhead PL" style="border-radius: 4.2% / 45%;">
+              <div class="PIN" style="float:left;margin-left:10px;"></div>
+              bunny's bulletin board
+              <div class="PIN" style="float:right;margin-right:10px;"></div>
+            </div>
+  </div>
+  <div class="float-container">
+    <!-- Second div with 75% width containing the flexbox -->
+    <div style="background-color: lightgreen; width: 100%; height: auto;">
+      <div class="flex-container">
+        <div class="flex-item box20">
+             <div class="icon01"></div>
+             <div class="roundhead LOVE">
+                #/#/23
+              </div>
+             <sub>bunnyparty v1 has dropped!! im very excited to debut this site. its just for friends but it makes me happy.
+             </sub>
+            </div>
+        <div class="specific-item box20">
+             <div class="icon01"></div>
+             <div class="roundhead LOVE">
+                #/#/23
+              </div>
+             <sub>a
+             </sub>
+            </div>
+        <div class="flex-item box20">
+             <div class="icon01"></div>
+             <div class="roundhead LOVE">
+                #/#/23
+              </div>
+             <sub>bunnyparty v1 has dropped!! im very excited to debut this site. its just for friends but it makes me happy.
+             </sub>
+            </div>
+            
+            <div class="flex-item box20">
+             <div class="icon01"></div>
+             <div class="roundhead LOVE">
+                #/#/23
+              </div>
+             <sub>bunnyparty v1 has dropped!! im very excited to debut this site. its just for friends but it makes me happy.
+             </sub>
+            </div>
+        <!-- Add more flex items with different heights and widths as needed -->
+      </div>
+    </div>
+  </div>
+  <div class="float-container">
+   <div class="box11">
+                <div class="box-top">
+                <div class="u01"></div>
+                </div>
+                    
+                <!-- The wrapper for the .box-center div -->
+                <div class="box-center-wrapper">
+                <!-- The left part of .box-center -->
+                <div class="box-center-left">
+                    Today's color of the day is <span id="currentColorValue"></span>:
+                    <div id="colorDisplay" style="width:96%;height:100px;margin:5px 0px;
+                    border-radius:5px;filter: brightness(1.25);border:1px solid #4b2e0f"></div>
+                    <span style="font-size:13px;">Current RGB value:</span>
+                        <br><span id="currentRGBValue" style="font-size:11px;"></span>
+                      
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+                        <script>
+                          function getRandomColor(seed) {
+                            const rng = new Math.seedrandom(seed);
+                            const red = rng() * 155 + 100; // Restricting red to be at least 100 (out of 255)
+                            const green = rng() * 155 + 100; // Restricting green to be at least 100 (out of 255)
+                            const blue = rng() * 155 + 100; // Restricting blue to be at least 100 (out of 255)
+                            return `rgb(${red}, ${green}, ${blue})`;
+                          }
+                      
+                          function getCurrentTimePercentage() {
+                            const now = new Date();
+                            const hours = now.getHours();
+                            const minutes = now.getMinutes();
+                            const totalMinutes = hours * 60 + minutes;
+                            return totalMinutes / (24 * 60); // Get the percentage of the day passed (0 to 1)
+                          }
+                      
+                          function darkenColor(color, percentage) {
+                            const factor = 1 - percentage;
+                            const [r, g, b] = color.match(/\d+/g); // Extract RGB values from the color string
+                            const darkenedR = Math.round(r * factor);
+                            const darkenedG = Math.round(g * factor);
+                            const darkenedB = Math.round(b * factor);
+                            return `rgb(${darkenedR}, ${darkenedG}, ${darkenedB})`;
+                          }
+                      
+                          function updateColor() {
+                            const seed = getSeedFromDate();
+                            const color = getRandomColor(seed);
+                            const percentage = getCurrentTimePercentage();
+                            const darkenedColor = darkenColor(color, percentage);
+                            const colorDisplay = document.getElementById("colorDisplay");
+                            const currentColorValue = document.getElementById("currentColorValue");
+                            const currentRGBValue = document.getElementById("currentRGBValue");
+                      
+                            colorDisplay.style.backgroundColor = darkenedColor;
+                            currentColorValue.textContent = `(${seed})`;
+                            currentRGBValue.textContent = darkenedColor.substring(4, darkenedColor.length - 1);
+                      
+                            // Request the next animation frame
+                            requestAnimationFrame(updateColor);
+                          }
+                      
+                          function getSeedFromDate() {
+                            const now = new Date();
+                            const year = now.getFullYear();
+                            const month = now.getMonth() + 1; // Months are zero-indexed, so add 1
+                            const day = now.getDate();
+                      
+                            // Concatenate the year, month, and day to form the seed value
+                            return `${year}-${month}-${day}`;
+                          }
+                      
+                          // Start the live color change
+                          updateColor();
+                        </script>
+                </div>
+
+                <!-- The right part of .box-center -->
+                <div class="box-center-right">
+                
+                </div>
+              </div>
+                    
+                <div class="box-tunagi">
+                <div class="t01"></div>
+                </div>
+                    
+                <div class="box-center">
+                    <a href="https://pfq.link/?nP-nk"><img src="https://pfq.link/?nP-nk=platform.png" style="margin-top:-47px"></a>
+                </div>
+                    
+                <div class="box-bottom">
+                <div class="s01"></div>
+                </div>
+            </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('load', adjustHeight);
+
+function adjustHeight() {
+  const flexItems = document.querySelectorAll('.flex-item');
+  const containerWidth = document.querySelector('.flex-container').offsetWidth;
+
+  const margin = 10;
+  const numColumns = 3;
+
+  const itemWidth = (containerWidth - (numColumns - 1) * margin) / numColumns;
+  flexItems.forEach(item => {
+    item.style.width = itemWidth + 'px';
+    item.style.height = item === specificItem ? '100px' : itemWidth + 'px';
+  });
+}
+
+window.addEventListener('resize', adjustHeight);
+</script>
