@@ -103,141 +103,28 @@
         </div>
         
         <div class="pageContent">
-        <div id="contop">
-        <img src="/img/deco/cloverbow.gif" alt="green clover bow" style="float:left;margin-left:-3px;margin-right:10px;margin-top:-4px;width:79px" class="pix"> 
-        hello and welcome to <span style="letter-spacing:-0.25px;">bunnyparty</span> !! im your host, bunny.
-        <br>you can <span style="letter-spacing:-0.4px;">use any pronouns</span> you'd like for me. im an adult, im mentally and physically disabled , and im a trans girl<span style="letter-spacing:-2px;"> .</span>
-
-        <br><br>this site is a safe space for me, <span style="letter-spacing:-0.25px;">and really intended for my eyes only,</span> as well as the eyes of very close friends .
-        if you've stumbled upon this site and you don't know me , feel free to look around ! just please keep in mind this is a very personal space 
-        <span style="color:#78cef3;">♪</span> (∩´∀｀)∩<span style="color:#ff8ce6;">✿</span>
-        </div>
-
-        <div id="Cleft">
-            <div class="roundhead PL" style="border-radius: 4.2% / 45%;">
-              <div class="PIN" style="float:left;margin-left:10px;"></div>
-              bunny's bulletin board
-              <div class="PIN" style="float:right;margin-right:10px;"></div>
-            </div>
-
-            <div class="box20">
-             <div class="icon01"></div>
-             <div class="roundhead LOVE">
-                #/#/23
-              </div>
-             <sub>bunnyparty v1 has dropped!! im very excited to debut this site. its just for friends but it makes me happy.
-             </sub>
-            </div>
-
-            <div class="dropshadow">
-                <div class="box22"></div>
-            </div>
-
-            <div class="box11" style="float:right;">
-                <div class="box-top">
-                <div class="u01"></div>
-                </div>
-                    
-                <!-- The wrapper for the .box-center div -->
-                <div class="box-center-wrapper">
-                <!-- The left part of .box-center -->
-                <div class="box-center-left">
-                    Today's color of the day is <span id="currentColorValue"></span>:
-                    <div id="colorDisplay" style="width:96%;height:100px;margin:5px 0px;
-                    border-radius:5px;filter: brightness(1.25);border:1px solid #4b2e0f"></div>
-                    <span style="font-size:13px;">Current RGB value:</span>
-                        <br><span id="currentRGBValue" style="font-size:11px;"></span>
-                      
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
-                        <script>
-                          function getRandomColor(seed) {
-                            const rng = new Math.seedrandom(seed);
-                            const red = rng() * 155 + 100; // Restricting red to be at least 100 (out of 255)
-                            const green = rng() * 155 + 100; // Restricting green to be at least 100 (out of 255)
-                            const blue = rng() * 155 + 100; // Restricting blue to be at least 100 (out of 255)
-                            return `rgb(${red}, ${green}, ${blue})`;
-                          }
-                      
-                          function getCurrentTimePercentage() {
-                            const now = new Date();
-                            const hours = now.getHours();
-                            const minutes = now.getMinutes();
-                            const totalMinutes = hours * 60 + minutes;
-                            return totalMinutes / (24 * 60); // Get the percentage of the day passed (0 to 1)
-                          }
-                      
-                          function darkenColor(color, percentage) {
-                            const factor = 1 - percentage;
-                            const [r, g, b] = color.match(/\d+/g); // Extract RGB values from the color string
-                            const darkenedR = Math.round(r * factor);
-                            const darkenedG = Math.round(g * factor);
-                            const darkenedB = Math.round(b * factor);
-                            return `rgb(${darkenedR}, ${darkenedG}, ${darkenedB})`;
-                          }
-                      
-                          function updateColor() {
-                            const seed = getSeedFromDate();
-                            const color = getRandomColor(seed);
-                            const percentage = getCurrentTimePercentage();
-                            const darkenedColor = darkenColor(color, percentage);
-                            const colorDisplay = document.getElementById("colorDisplay");
-                            const currentColorValue = document.getElementById("currentColorValue");
-                            const currentRGBValue = document.getElementById("currentRGBValue");
-                      
-                            colorDisplay.style.backgroundColor = darkenedColor;
-                            currentColorValue.textContent = `(${seed})`;
-                            currentRGBValue.textContent = darkenedColor.substring(4, darkenedColor.length - 1);
-                      
-                            // Request the next animation frame
-                            requestAnimationFrame(updateColor);
-                          }
-                      
-                          function getSeedFromDate() {
-                            const now = new Date();
-                            const year = now.getFullYear();
-                            const month = now.getMonth() + 1; // Months are zero-indexed, so add 1
-                            const day = now.getDate();
-                      
-                            // Concatenate the year, month, and day to form the seed value
-                            return `${year}-${month}-${day}`;
-                          }
-                      
-                          // Start the live color change
-                          updateColor();
-                        </script>
-                </div>
-
-                <!-- The right part of .box-center -->
-                <div class="box-center-right">
+        <div id="contop" style="height:610px;margin-bottom:0px;overflow-y:scroll;">
+            <img src="https://files.catbox.moe/bcvkhj.jpg" style="vertical-align:top;width:49.3%"> <img src="https://files.catbox.moe/x1x0fr.gif" style="vertical-align:top;width:49.3%">
+            <p><img src="https://files.catbox.moe/enuluh.jpg" style="width:49.3%"> <img src="https://files.catbox.moe/mavvxa.gif" style="width:49.3%">
+            
+            <img src="https://files.catbox.moe/lbc02z.gif" style="vertical-align:top;width:49.3%"> <img src="https://files.catbox.moe/h0jqx4.gif" style="vertical-align:top;width:49.3%">
+            <p><img src="https://files.catbox.moe/gi9jgw.gif" style="width:49.3%"> <img src="https://files.catbox.moe/b4ac98.gif" style="width:49.3%">
                 
-                </div>
-              </div>
-                    
-                <div class="box-tunagi">
-                <div class="t01"></div>
-                </div>
-                    
-                <div class="box-center">
-                    <a href="https://pfq.link/?nP-nk"><img src="https://pfq.link/?nP-nk=platform.png" style="margin-top:-47px"></a>
-                </div>
-                    
-                <div class="box-bottom">
-                <div class="s01"></div>
-                </div>
-            </div>
-
-            <div class="box21">
-                <div class="icon01"></div>
-                <div class="roundhead LOVE" style="width:70%;">
-                   #/#/23
-                 </div>
-                <sub>bunnyparty bunny party bunyparty bunyparty
-                </sub>
-            </div>
+            <p><img src="https://files.catbox.moe/6ct6mc.gif" style="vertical-align:top;width:49.3%"> <img src="https://files.catbox.moe/wxafrt.gif" style="vertical-align:top;width:49.3%">
+            <p><img src="https://files.catbox.moe/e9jksi.gif" style="width:49.3%"> <img src="https://files.catbox.moe/a26230.gif" style="width:49.3%">
+            
+            <p><br><img src="https://files.catbox.moe/iydoih.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/uhkm3v.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/4bi8kg.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/oqphom.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/qgguox.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/4g22lz.gif" style="vertical-align:top;">
+            <p><img src="https://files.catbox.moe/d52fxn.gif"> <img src="https://files.catbox.moe/08xnel.gif"> <img src="https://files.catbox.moe/vx2d0b.gif"> <img src="https://files.catbox.moe/loi0nk.gif"> <img src="https://files.catbox.moe/fidj0r.gif"> <img src="https://files.catbox.moe/igp80i.gif">
+            
+            <p><br><img src="https://files.catbox.moe/n7p0ge.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/u9040c.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/l6u2pl.gif" style="vertical-align:top;"> <img src="https://pixelbank.neocities.org/frame/fae9d0d1.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/kemka2.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/fkt38n.gif" style="vertical-align:top;">
+            <p><img src="https://files.catbox.moe/ogh6x7.gif"> <img src="https://files.catbox.moe/nvm7f3.gif"> <img src="https://files.catbox.moe/5vdo9v.gif"> <img src="https://files.catbox.moe/x6kr9h.gif"> <img src="https://files.catbox.moe/cgp06h.gif"> <img src="https://files.catbox.moe/g19k0x.gif">
+            
+            <p><br><img src="https://files.catbox.moe/nebnzz.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/iqkz5q.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/r8vl4y.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/de6ffs.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/oxccfj.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/rtocww.gif" style="vertical-align:top;">
+            <p><img src="https://pixelbank.neocities.org/frame/8dec9ae7.gif"> <img src="https://files.catbox.moe/t5snr5.gif"> <img src="https://files.catbox.moe/glk1w2.gif"> <img src="https://files.catbox.moe/39pt51.gif"> <img src="https://files.catbox.moe/5k9gtd.gif"> <img src="https://files.catbox.moe/an49c4.gif">
+            
+            <p><br><img src="https://files.catbox.moe/r80bkg.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/yfyv4r.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/rbdacq.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/t8nfxl.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/l807pj.gif" style="vertical-align:top;"> <img src="https://files.catbox.moe/bfcgce.gif" style="vertical-align:top;">
+            <p><img src="https://files.catbox.moe/00x4ef.gif"> <img src="https://files.catbox.moe/2zyw4t.gif"> <img src="https://files.catbox.moe/ruh7ut.gif"> <img src="https://files.catbox.moe/sfqj90.webp"> <img src="https://files.catbox.moe/vgg78y.gif"> <img src="https://files.catbox.moe/he9v5x.gif">
         </div>
-
-        <!--<div id="Cright">
-        </div>-->
 
         </div>
         
