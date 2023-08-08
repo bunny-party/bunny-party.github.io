@@ -3,6 +3,7 @@
     background-position : center center;
     font-family : 'morningtea';
     letter-spacing: 0.7px;
+    cursor: url("/img/LCrainbow.cur"), pointer !important;
     }
     
     .contain{
@@ -17,6 +18,10 @@
     padding : 10px;
     border : 4px ridge #ffaaf4;
     color : #b58569;
+    }
+
+    a:hover{
+    cursor: url("/img/LCheart.cur"), pointer !important;
     }
     
     .pageHeader{
