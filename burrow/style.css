@@ -1,0 +1,506 @@
+body{
+    background-image : url("/img/bg/hana-70.gif");
+    background-position : center center;
+    font-family : 'morningtea';
+    letter-spacing: 0.7px;
+    cursor: url("/img/LCrainbow.cur"), pointer !important;
+    }
+    
+    .contain{
+    background-image : url("/img/bg/w-26.gif");
+    background-position : 5px 5px;
+    display : block;
+    width : 1000px;
+    overflow : auto;
+    margin : 0px auto;
+    margin-top : -8px;
+    margin-bottom : -8px;
+    padding : 10px;
+    border : 4px ridge #ffaaf4;
+    color : #b58569;
+    }
+
+    a:hover{
+    cursor: url("/img/LCheart.cur"), pointer !important;
+    }
+    
+    .pageHeader{
+    background-color : #fff;
+    background-image : url("/img/angelsdither.png");
+    background-size : contain;
+    background-position : left center;
+    background-repeat: no-repeat;
+    float : left;
+    clear : none;
+    height : 200px;
+    width : 996px;
+    border : 2px ridge #ffaaf4;
+    text-align : center;
+    /*box-shadow : -1px -1px 2px inset #0000004d, 2px 2px 2px inset white,0px 0px 2px #0000001a;*/
+    }
+    .pageHeaderSub{
+    float : left;
+    clear : none;
+    background-image : url("/img/bg/pinkplaid.png");
+    background-position : 5px 5px;
+    width : 1000px;
+    margin : 10px 0px;
+    height: auto;
+    text-align: center;
+    font-family : 'daydream';
+    font-weight : normal;
+    font-style : normal;
+    font-size : 12px;
+    letter-spacing : 0.5px;
+    vertical-align: top;
+    border-radius: 50px;
+    padding-top: 7px;
+    padding-bottom: 2.3px;
+    text-shadow: 0px 0px 2px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 6px rgba(255,255,255,.7), 0px 0px 4px rgba(255,255,255,.5);
+    box-shadow: -1px -1.4px 1px inset rgba(219, 86, 197,0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(219, 86, 197,0.5), 1px 1px 3px rgba(219, 86, 197,0.5);
+    }
+    
+    .pageBarLeft{
+    float : left;
+    clear : none;
+    background: rgba(0, 0, 0, 0);
+    }
+    .pageBarLeftNav{
+    background: transparent;
+    float : none;
+    clear : both;
+    height : auto;
+    width : 192px;
+    margin : 0px;
+    }
+    
+    .pageContent{
+    float : left;
+    clear : none;
+    height : auto;
+    width : 592px;
+    margin : 0px 10px;
+    position : relative;
+    overflow : hidden;
+    background:rgba(0, 0, 0, 0)
+    }
+    #contop{
+    background-color : #fff;
+    width : 97%;
+    height : auto;
+    float : left;
+    clear : both;
+    border : 2px ridge #ffaaf4;
+    padding : 8px 7px 2px 7px;
+    margin-bottom: 10px;
+    }
+    #Cleft{
+    float:left;
+    width: 97.64%;
+    height: 439px;
+    background-image: url("/img/bg/cork.jpg");
+    background-size: cover;
+    background-position: center center;
+    border: 2px ridge #ffaaf4;
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+    }
+    /*#Cright{
+    float:left;
+    width: 24.27%;
+    height: 354px;
+    border: 2px ridge #ffaaf4;
+    background-image: url("/img/digipinkdither.png");
+    background-size: cover;
+    background-position: center center;
+    }*/
+    
+    .pageBarRight{
+    float : left;
+    clear : none;
+    min-width : 80px;
+    min-height : 80px;
+    }
+    .pageBarRightTop{
+    background-color : #fff;
+    float : none;
+    clear : both;
+    height : auto;
+    width : 178px;
+    border : 2px ridge #ffaaf4;
+    padding : 5px 5px 0px 5px;
+    text-align: center;
+    }
+    .pageBarRightMid{
+    background-color : #fff;
+    float : none;
+    clear : both;
+    height : 95px;
+    width : 188px;
+    border : 2px ridge #ffaaf4;
+    margin : 10px 0px 10px 0px;
+    }
+    .pageBarRightBottom{
+    background-color : #fff;
+    background-image : url("/img/frame/goatT.gif"), url("/img/frame/goatB.gif");
+    background-size : 100%, 100%;
+    background-repeat : no-repeat, no-repeat;
+    background-position : top, bottom;
+    float : none;
+    height : 325px;
+    width : 178px;
+    border : 2px ridge #ffaaf4;
+    margin : 0px;
+    padding : 37px 5px 0px 5px;
+    overflow : hidden;
+    }
+    
+    .pageFooter{
+    background-color : #fff;
+    float : left;
+    clear : none;
+    height : 150px;
+    width : 986px;
+    border : 2px ridge #ffaaf4;
+    margin : 10px 0px;
+    padding : 5px 5px 0px 5px;
+    }
+    .pageFooterSub{
+    background-color : #fff;
+    float : left;
+    clear : none;
+    height : 30px;
+    width : 986px;
+    padding : 15px 5px 0px 5px;
+    border : 2px ridge #ffaaf4;
+    text-align : center;
+    }
+
+    .mocha{
+    width : 370px;
+    height : auto;
+    position : sticky;
+    bottom : 0px;
+    left : 1250px;
+    }
+    .mocha img{
+    width : 100%;
+    filter: drop-shadow(5px 5px 4px rgba(86, 48, 30, 0.5));
+    }
+    
+    j{
+    font-family : 'daydream';
+    font-weight : normal;
+    font-style : normal;
+    font-size : 12px;
+    letter-spacing : 0.5px;
+    vertical-align: top;
+    }
+    
+    h1{
+    font-family : 'daydream';
+    font-weight : normal;
+    font-style : normal;
+    font-size: 50px;
+    text-align: right;
+    margin-top: 127px;
+    margin-right: 8px;
+    }
+    
+    hr {
+    border : 0px;
+    border-top : 2px ridge #ffaaf4;
+    margin : 0px 0px;
+    width : 106%;
+    margin-left : -5px;
+    }
+
+    .roundhead{
+    background-position : 5px 5px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family : 'daydream';
+    font-weight : normal;
+    font-style : normal;
+    font-size : 12px;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 2px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 6px rgba(255,255,255,.7), 0px 0px 4px rgba(255,255,255,.5);
+    }
+
+    .PI{
+    background-image : url("/img/bg/pinkplaid.png");
+    box-shadow: -1px -1.4px 1px inset rgba(219, 86, 197,0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(219, 86, 197,0.5), 1px 1px 3px rgba(219, 86, 197,0.5);
+    }
+
+    .GR{
+    background-image : url("/img/bg/greenplaid.png");
+    box-shadow: -1px -1.4px 1px inset rgba(56, 163, 109, 0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(56, 163, 109,0.5), 1px 1px 3px rgba(56, 163, 109, 0.5);
+    }
+
+    .BL{
+    background-image : url("/img/bg/blueplaid.png");
+    box-shadow: -1px -1.4px 1px inset rgba(99, 148, 226, 0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(99, 148, 226,0.5), 1px 1px 3px rgba(99, 148, 226, 0.5);
+    }
+    
+    .PW{
+    background-image : url("/img/bg/periwinkleplaid.png");
+    box-shadow: -1px -1.4px 1px inset rgba(99, 148, 226, 0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(99, 148, 226,0.5), 1px 1px 3px rgba(99, 148, 226, 0.5);
+    }
+
+    .PL{
+    background-image : url("/img/bg/purpleplaid.png");
+    box-shadow: -1px -1.4px 1px inset rgba(111, 99, 180, 0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(111, 99, 180,0.5), 1px 1px 3px rgba(111, 99, 180, 0.5);
+    }
+
+    .OR{
+    background-image : url("/img/bg/orangeplaid.png");
+    box-shadow: -1px -1.4px 1px inset rgba(226, 108, 69, 0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(226, 108, 69, 0.5), 1px 1px 3px rgba(226, 108, 69, 0.5);
+    }
+
+    .LOVE{
+    background-image : url("/img/bg/pinkstars.png");
+    background-size: auto;
+    background-position: top left;
+    box-shadow: -1px -1.4px 1px inset rgba(219, 86, 197,0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(219, 86, 197,0.5), 1px 1px 3px rgba(219, 86, 197,0.5);
+    width:50%;
+    border-radius:0px 60px 60px 0px;
+    margin-bottom:6px;
+    margin-left:-10px;
+    text-align:left;
+    padding-left:10px;
+    }
+
+    .pix{
+    image-rendering: pixelated;
+    }
+
+    .pipi{
+    vertical-align:text-top;
+    image-rendering: pixelated;
+    filter: drop-shadow(0px 0px 2px rgba(255,255,255,1)) drop-shadow(0px 0px 3px rgba(255,255,255,1)) drop-shadow(0px 0px 3px rgba(255,255,255,.7)) drop-shadow(0px 0px 3px rgba(255,255,255,.5));
+    }
+
+    .navhead{
+    border-radius: 50px 50px 0px 0px;
+    margin-bottom: 0px;
+    }
+
+    .navmid{
+    border-radius: 0px;
+    margin-bottom: 0px;
+    }
+
+    .navbutt{
+    background: linear-gradient(185deg, rgb(255, 255, 255) 0%, rgba(247,235,211,1) 99%);
+    padding: 3.5px 5px;
+    padding-bottom: 3.5px;
+    border: 1px solid #ef9ee4;
+    border-top: 0px;
+    box-shadow: -1px -1.4px 1px inset rgba(227, 192, 151, 0.8), 2px 3px 1.5px inset white, 0px 0px 2px rgba(219, 86, 197,0.5), 1px 1px 3px rgba(219, 86, 197, 0.5);
+    }
+
+    .navend{
+    background-position : 5px 5px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family : 'daydream';
+    font-weight : normal;
+    font-style : normal;
+    font-size : 12px;
+    letter-spacing: 0.5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-shadow: 0px 0px 2px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 6px rgba(255,255,255,.7), 0px 0px 4px rgba(255,255,255,.5);
+    border-radius: 0px 0px 50px 50px;
+    margin-bottom: 0px;
+    }
+
+    .bullet{
+    float: left;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    border:none;
+    margin-top: 4px;
+    margin-right: 7px;
+    }
+
+    .PIB{
+    background: #ff8ce6;
+    box-shadow: -1px -1.2px 1px inset rgba(219, 86, 197,0.8), 2px 3px 1.5px inset rgba(255,255,255,.9), 0px 0px 1px rgba(219, 86, 197,0.5), 1px 1px 2px rgba(219, 86, 197,0.5);
+    }
+
+    .GRB{
+    background: #a8e585;
+    box-shadow: -1px -1.2px 1px inset rgba(56, 163, 109,0.8), 2px 3px 1.5px inset rgba(255,255,255,.9), 0px 0px 1px rgba(56, 163, 109,0.5), 1px 1px 2px rgba(56, 163, 109,0.5);
+    }
+
+    .BLB{
+    background: #8ddcfd;
+    box-shadow: -1px -1.2px 1px inset rgba(99, 148, 226,0.8), 2px 3px 1.5px inset rgba(255,255,255,.8), 0px 0px 1px rgba(99, 148, 226,0.5), 1px 1px 2px rgba(99, 148, 226,0.5);
+    }
+
+    .PWB{
+    background: #a3cafd;
+    box-shadow: -1px -1.2px 1px inset rgba(99, 148, 226,0.8), 2px 3px 1.5px inset rgba(255,255,255,.8), 0px 0px 1px rgba(99, 148, 226,0.5), 1px 1px 2px rgba(99, 148, 226,0.5);
+    }
+
+    .PLB{
+    background: #b8afe9;
+    box-shadow: -1px -1.2px 1px inset rgba(126, 114, 192, 0.8), 2px 3px 1.5px inset rgba(255,255,255,.8), 0px 0px 1px rgba(126, 114, 192,0.5), 1px 1px 2px rgba(126, 114, 192,0.5);
+    }
+
+    .PIN{
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    border:none;
+    background: radial-gradient(circle, rgb(181, 149, 228) 20%, rgba(136,123,214,1) 70%);
+    background-position: bottom 3px right 2px;
+    box-shadow: -1px -1.2px 1px inset rgba(96, 85, 158, 0.8), 2px 3px 1.5px inset rgba(255,255,255,.8), 0px 0px 1px rgba(96, 85, 158,0.5), 1px 1px 2px rgba(96, 85, 158,0.5);
+    }
+
+    .CLleft{
+    float: left;
+    width:41%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    }
+
+    .box20{
+    float: left;
+    background:url(/img/bg/paper.gif);
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5), 2px 2px 5px rgba(51, 31, 20, 0.5);
+    box-sizing:border-box;
+    margin:13px 2px; /* 中央寄せは0をautoに変更 */
+    padding:10px;
+    position:relative;
+    width:41%;
+    text-align: left;
+    border-radius: 3px;
+    }
+    .icon01 {
+    background:url(/img/deco/paperclip.png) no-repeat;
+    height:62px;
+    position:absolute;
+    right:5px;
+    top:-13px;
+    width:27px
+    }
+
+    .box21{
+    float: left;
+    background:url(/img/bg/paper.gif);
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5), 2px 2px 5px rgba(51, 31, 20, 0.5);
+    box-sizing:border-box;
+    margin:12px 5px; /* 中央寄せは0をautoに変更 */
+    margin-right: 0px;
+    padding:10px;
+    position:relative;
+    width:26.2%;
+    text-align: left;
+    border-radius: 3px;
+    }
+
+    .box22{
+    float: left;
+    background-image:url(/img/deco/sticky2.gif);
+    background-size: auto;
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+    margin:10px 5px; /* 中央寄せは0をautoに変更 */
+    margin-right: 0px;
+    padding:10px;
+    position:relative;
+    width:142px;
+    height: 68px;
+    text-align: left;
+    margin-left:8px;
+    margin-bottom:0px;
+    }
+
+    .dropshadow {
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)) drop-shadow(2px 2px 4px rgba(51, 31, 20, 0.3));
+    }
+
+    .box11 {
+    background-color: transparent;
+    float:left;
+    margin:0px 0px;
+    margin-left: 7px;
+    margin-top: 13px;
+    width:30%;
+    }
+    .u01 {
+    background:url(/img/deco/f-ue.png) repeat-x;
+    height:45px;
+    margin:0 50px
+    }
+    .s01 {
+    background:url(/img/deco/f-sita.png) repeat-x;
+    height:13px;
+    margin:0 50px
+    }
+    .t01 {
+    background:url(/img/deco/f-tunagi-naka.png) repeat-x;
+    height:48px;
+    margin:0 50px
+    }
+    .box-top {
+    background-image:url(/img/deco/f-kado1.png), url(/img/deco/f-kado2.png);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:42px
+    }
+    .box-center {
+    background-image:url(/img/deco/f-migi.png), url(/img/deco/f-hidari.png) , url(/img/deco/f-naka.png);
+    background-position:top right, top left, top center;
+    background-repeat:repeat-y, repeat-y ,repeat;
+    padding:0 10px
+    }
+    /* Styles for the wrapper of .box-center */
+    .box-center-wrapper {
+    /* Use flexbox to align the left and right parts of .box-center */
+    display: flex;
+    }
+  
+    /* Styles for the left part of .box-center */
+    .box-center-left {
+    background-image: url(/img/deco/f-hidari.png), url(/img/deco/f-naka.png);
+    background-position: top left, top center;
+    background-repeat: repeat-y, repeat;
+    padding: 0 10px;
+    padding-right: 3px;
+    flex: 1; /* Take up the available space inside the flex container */
+    filter: brightness(100%);
+    overflow-x: visible;
+    padding-bottom:5px;
+    }
+  
+    /* Styles for the right part of .box-center */
+    .box-center-right {
+    background-image: url(/img/deco/f-migi.png);
+    background-position: top right;
+    background-repeat: repeat-y;
+    width: 10%; /* Adjust as needed */
+    margin-left:-10px;
+    }
+    .box-bottom {
+    background-image:url(/img/deco/f-kado3.png), url(/img/deco/f-kado4.png);
+    background-position:top left, top right;
+    background-repeat:no-repeat, no-repeat;
+    height:13px
+    }
+    .box-tunagi {
+    background-image:url(/img/deco/f-tunagi-migi.png), url(/img/deco/f-tunagi-hidari.png);
+    background-position:top right, top left;
+    background-repeat:repeat-y, repeat-y;
+    height:48px
+    }
