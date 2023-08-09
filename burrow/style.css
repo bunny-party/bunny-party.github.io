@@ -87,34 +87,23 @@ body{
     #contop{
     background-color : #fff;
     width : 97%;
+    height : 130px;
+    float : left;
+    clear : both;
+    border : 2px ridge #ffaaf4;
+    padding : 8px 7px 0px 7px;
+    margin-bottom: 10px;
+    }
+    #con2{
+    background-color : #fff;
+    width : 97%;
     height : auto;
     float : left;
     clear : both;
     border : 2px ridge #ffaaf4;
-    padding : 8px 7px 2px 7px;
+    padding : 8px 7px 4px 7px;
     margin-bottom: 10px;
     }
-    #Cleft{
-    float:left;
-    width: 97.64%;
-    height: 439px;
-    background-image: url("/img/bg/cork.jpg");
-    background-size: cover;
-    background-position: center center;
-    border: 2px ridge #ffaaf4;
-    padding: 5px;
-    text-align: center;
-    margin-right: 10px;
-    }
-    /*#Cright{
-    float:left;
-    width: 24.27%;
-    height: 354px;
-    border: 2px ridge #ffaaf4;
-    background-image: url("/img/digipinkdither.png");
-    background-size: cover;
-    background-position: center center;
-    }*/
     
     .pageBarRight{
     float : left;
