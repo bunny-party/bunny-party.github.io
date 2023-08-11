@@ -1,0 +1,45 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>bunnyparty !!</title>
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel='stylesheet' type='text/css' href='/test.css'>
+   <link href="/fonts.css" rel="stylesheet" type="text/css" media="all">
+   
+   <script>
+    // Array of frame URLs for the animated favicon
+    const frameUrls = [
+      '/img/deco/pbw1.png',
+      '/img/deco/pbw2.png',
+      '/img/deco/pbw3.png',
+      '/img/deco/pbw4.png',
+      // Add more frame URLs here
+];
+
+let currentFrameIndex = 0;
+
+function updateFavicon() {
+const newFaviconUrl = frameUrls[currentFrameIndex];
+const linkTag = document.querySelector("link[rel='icon']");
+
+linkTag.href = newFaviconUrl;
+
+currentFrameIndex = (currentFrameIndex + 1) % frameUrls.length;
+}
+
+// Start the animation
+setInterval(updateFavicon, 200); // Change interval as needed
+   </script>
+</head>
+
+<body>
+  <div id="contain">
+    <div id="left">
+     h
+    </div>
+  </div>
+</body>
+
+</html>
