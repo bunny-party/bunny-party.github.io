@@ -90,25 +90,25 @@ setInterval(updateFavicon, 200); // Change interval as needed
         </div>
       </div>
 
+      <img src="/img/deco/bunnybucks.jpg" class="bucks animate-image">
+      <img src="/img/deco/dogbucks.png" class="bucks2 animate-image">
+      <img src="/img/deco/pupbucks.png" class="bucks3 animate-image">
+
     </div>
 
     <img src="/img/deco/charm.png" id="charm">
-
-    <img src="/img/deco/bunnybucks.jpg" class="bucks animate-image">
-    <img src="/img/deco/dogbucks.png" class="bucks2 animate-image">
-    <img src="/img/deco/pupbucks.png" class="bucks3 animate-image">
 
     <script>
       // script.js
 const images = document.querySelectorAll('.animate-image');
 
-const rotations = [89, 102, 95]; // Rotation angles for each image
-const rotations2 = [87, 93, 91]; // Second rotation angles for each image
+const rotations = [89, 102, 97]; // Rotation angles for each image
+const rotations2 = [87, 95, 91]; // Second rotation angles for each image
 
 images.forEach((image, index) => {
   image.addEventListener('mouseover', () => {
     images.forEach((img, i) => {
-      img.style.transform = `rotate(${rotations[i]}deg)`;
+      img.style.transform = `rotate(${rotations[i]}deg) translateY(-50px)`;
     });
   });
 
