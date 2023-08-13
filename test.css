@@ -187,53 +187,35 @@ INcard:hover{
     transition: ease-in-out 0.8s;
 }
 
-#bucks{
+.bucks{
     width: 350px;
     position: relative;
     top: -510px;
-    left: 0px;
+    left: -50px;
     z-index: 1;
     transform: rotate(87deg);
     transition: ease-in-out 0.7s;
-    filter: drop-shadow(2px 3px 2px rgba(168, 144, 157, 0.6));
+    filter: drop-shadow(3px -2px 2px rgba(168, 144, 157, 0.4));
 }
 
-#bucks2{
+.bucks2{
     width: 350px;
     position: relative;
     top: -480px;
-    left: -330px;
+    left: -380px;
     z-index: 1;
     transform: rotate(93deg);
     transition: ease-in-out 0.7s;
-    filter: drop-shadow(2px 3px 2px rgba(168, 144, 157, 0.6));
+    filter: drop-shadow(3px -2px 2px rgba(168, 144, 157, 0.4));
 }
 
-#bucks3{
+.bucks3{
     width: 350px;
     position: relative;
     top: -600px;
-    left: 150px;
+    left: 100px;
     z-index: 1;
     transform: rotate(91deg);
     transition: ease-in-out 0.7s;
-    filter: drop-shadow(2px 3px 2px rgba(168, 144, 157, 0.6));
-}
-
-#buckH:hover {
-    transform: rotate(-13deg) translate(20px, 0px);
-    transition: ease-in-out 0.7s;
-    filter: drop-shadow(-1px 4px 2px rgba(168, 144, 157, 0.6));
-}
-
-#buckH:hover nth-child(2) {
-    transform: rotate(-13deg) translate(20px, 0px);
-    transition: ease-in-out 0.7s;
-    filter: drop-shadow(-1px 4px 2px rgba(168, 144, 157, 0.6));
-}
-
-#buckH:hover nth-child(3) {
-    transform: rotate(-13deg) translate(20px, 0px);
-    transition: ease-in-out 0.7s;
-    filter: drop-shadow(-1px 4px 2px rgba(168, 144, 157, 0.6));
+    filter: drop-shadow(3px -2px 2px rgba(168, 144, 157, 0.4));
 }
