@@ -3,9 +3,9 @@ body {
     margin: 0;
     height: 100vh;
     width: 100%;
-    font-family : 'morningtea';
+    font-family : 'penny';
     letter-spacing: 0.7px;
-    cursor: url("/img/LCrainbow.cur"), pointer !important;
+    cursor: url("/img/rose.cur"), pointer !important;
     color : #a8909d;
 }
 
@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     border-left: 2px solid #000;
     border-right: 2px solid #000;
-    margin-left: 410px;
+    margin-left: 420px;
 }
 
 #book{
@@ -115,7 +115,17 @@ body {
 }
 
 #sticker{
-  filter: drop-shadow(3px 0 0.5px white) drop-shadow(0 3px 0.5px white) drop-shadow(-3px 0 0.5px white) drop-shadow(0 -4px 0.5px white) drop-shadow(-0px 1px 1px #81877B);
+  filter: drop-shadow(3px 0 0.5px white) drop-shadow(0 3px 0.5px white) drop-shadow(-3px 0 0.5px white) drop-shadow(0 -4px 0.5px white) drop-shadow(-0px 1px 1px rgba(168, 144, 157, 1));
+  text-shadow: 1px 1px 2px #EEECE8;
+}
+
+#sticker2{
+    filter: brightness(0.95) drop-shadow(3px 0 0.5px white) drop-shadow(0 3px 0.5px white) drop-shadow(-3px 0 0.5px white) drop-shadow(0 -4px 0.5px white) drop-shadow(-0px 1px 1px rgba(168, 144, 157, 1));
+    text-shadow: 1px 1px 2px #EEECE8;
+}
+
+#sticker3{
+  filter: drop-shadow(2px 0 0.5px white) drop-shadow(0 2px 0.5px white) drop-shadow(-2px 0 0.5px white) drop-shadow(0 -3px 0.5px white) drop-shadow(-0px 1px 1px rgba(168, 144, 157, 1));
   text-shadow: 1px 1px 2px #EEECE8;
 }
 
@@ -218,4 +228,30 @@ body {
     transform: rotate(91deg);
     transition: ease-in-out 0.7s;
     filter: drop-shadow(3px -2px 2px rgba(168, 144, 157, 0.4));
+}
+
+.right{
+    background-image: url("/img/bg/pinkflowers.png");
+    background-position: center center;
+    width: 45%; 
+    height: 479px;
+    padding: 10px;
+    border: 1px outset rgb(168, 144, 157, 0.5);
+    border-radius: 4px 11px 11px 4px;
+    position: absolute;
+    top: 6px; right: 5px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.4), 5px 0px 5px rgb(168, 144, 157, 0.1), -1px -1px 1px rgb(168, 144, 157, 0.3), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+}
+
+.rightIN{
+    background-image: url("/img/bg/pinkbunfem.gif");
+    background-position: center center;
+    width: 95.8%; 
+    height: 96.6%;
+    padding: 7px;
+    border: 1px outset rgb(168, 144, 157, 0.5);
+    border-radius: 4px 9px 9px 4px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.4), 5px 0px 5px rgb(168, 144, 157, 0.1), -1px -1px 1px rgb(168, 144, 157, 0.3), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    z-index: 8;
 }

@@ -34,3 +34,27 @@
     font-family : 'proto';
     src : url("/fonts/ProtoPixel1.ttf");
 }
+@font-face{
+    font-family : 'single';
+    src : url("/fonts/SingleDay-Regular.ttf");
+}
+@font-face{
+    font-family : 'kawaii';
+    src : url("/fonts/kawaii-desu.ttf");
+}
+@font-face{
+    font-family : 'love';
+    src : url("/fonts/love.ttf");
+}
+@font-face{
+    font-family : 'face';
+    src : url("/fonts/pixelface_memesbruh03.ttf");
+}
+@font-face{
+    font-family : 'sweet';
+    src : url("/fonts/sweet_heart.ttf");
+}
+@font-face{
+    font-family : 'cutie';
+    src : url("/fonts/CutiePop.ttf");
+}
