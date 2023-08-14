@@ -14,13 +14,15 @@ body {
     height: 100%;
     margin: auto auto;
     overflow: hidden;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
+    border-left: 2px solid rgb(0, 0, 0, 0.5);
+    border-right: 2px solid rgb(0, 0, 0, 0.5);
     margin-left: 420px;
 }
 
 #book{
     background-color: #ffecf0;
+    background-image: url("/img/bg/quiltedpinkg.png");
+    background-position: center center;
     width: 790px; 
     height: 512px;
     margin: 110px 0px 5px 5px;
@@ -57,6 +59,7 @@ body {
 
 #cardIN{
     background-color: #ffecf0;
+    background-image: url("/img/bg/quiltedpinkg.png");
     width: 93.4%; 
     height: 220px;
     padding: 7px;
@@ -137,13 +140,13 @@ body {
     z-index: 0;
     transform: rotate(-3deg);
     transition: ease-in-out 0.7s;
-    filter: drop-shadow(2px 3px 2px rgba(168, 144, 157, 0.6));
+    filter: brightness(1.2) drop-shadow(2px 3px 2px rgba(168, 144, 157, 0.6));
 }
 
 #charm:hover{
     transform: rotate(-13deg) translate(20px, 0px);
     transition: ease-in-out 0.7s;
-    filter: drop-shadow(-1px 4px 2px rgba(168, 144, 157, 0.6));
+    filter: brightness(1.2) drop-shadow(-1px 4px 2px rgba(168, 144, 157, 0.6));
 }
 
 #zoom{
@@ -165,7 +168,7 @@ body {
     border: 1px outset #fff;
     border-radius: 13px;
     position: relative;
-    top: -375px; left: 50px;
+    top: -745px; left: 50px;
     box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.4), 5px 0px 5px rgb(168, 144, 157, 0.1), -1px -1px 1px rgb(168, 144, 157, 0.3), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
     z-index: 8;
     transition: ease-in-out 0.8s;
@@ -200,8 +203,8 @@ body {
 .bucks{
     width: 350px;
     position: relative;
-    top: -780px;
-    left: 50px;
+    top: -430px;
+    left: 40px;
     z-index: 1;
     transform: rotate(87deg);
     transition: ease-in-out 0.7s;
@@ -211,8 +214,8 @@ body {
 .bucks2{
     width: 350px;
     position: relative;
-    top: -750px;
-    left: -280px;
+    top: -400px;
+    left: -290px;
     z-index: 1;
     transform: rotate(95deg);
     transition: ease-in-out 0.7s;
@@ -222,8 +225,8 @@ body {
 .bucks3{
     width: 350px;
     position: relative;
-    top: -870px;
-    left: 70px;
+    top: -520px;
+    left: 60px;
     z-index: 1;
     transform: rotate(91deg);
     transition: ease-in-out 0.7s;
@@ -233,7 +236,7 @@ body {
 .right{
     background-image: url("/img/bg/pinkflowers.png");
     background-position: center center;
-    width: 45%; 
+    width: 44%; 
     height: 479px;
     padding: 10px;
     border: 1px outset rgb(168, 144, 157, 0.5);
@@ -247,11 +250,79 @@ body {
 .rightIN{
     background-image: url("/img/bg/pinkbunfem.gif");
     background-position: center center;
-    width: 95.8%; 
-    height: 96.6%;
-    padding: 7px;
+    width: 90.9%; 
+    height: 93.4%;
+    padding: 15px;
     border: 1px outset rgb(168, 144, 157, 0.5);
     border-radius: 4px 9px 9px 4px;
     box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.4), 5px 0px 5px rgb(168, 144, 157, 0.1), -1px -1px 1px rgb(168, 144, 157, 0.3), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
     z-index: 8;
+}
+
+.rightINt{
+    background-image: url("/img/bg/pinkheartgingham.png");
+    background-position: center center;
+    width: 95%; 
+    height: 25%;
+    padding: 7px;
+    border: 3px ridge #ffaed9;
+    border-top: 3px groove #ffaed9;
+    border-left: 3px groove #ffaed9;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 5px 0px 5px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+}
+
+.rightINm{
+    background-image: url("/img/bg/pastelstarani.png");
+    background-position: center center;
+    width: 95%; 
+    height: 25%;
+    padding: 7px;
+    border: 2px ridge #ffaed9;
+    border-top: 2px groove #ffaed9;
+    border-left: 2px groove #ffaed9;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 5px 0px 5px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    margin-top: 15px;
+}
+
+.RINl{
+    float: right;
+    background: #fff;
+    width: auto; 
+    height: auto;
+    padding: 8px 8px 6px 8px;
+    border: 1px solid #f79fce;
+    border-left: 3px double #fa84c3;
+    border-right: 3px double #fa84c3;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 4px 0px 4px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -1px -1px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    margin-left: 7px;
+    font-family: 'daydream';
+}
+
+.RINlb{
+    float: right;
+    background: #fff;
+    width: 79%; 
+    height: 49px;
+    padding: 7px 5px 5px 22px;
+    border: 1px solid #f79fce;
+    border-left: 3px double #fa84c3;
+    border-right: 3px double #fa84c3;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 4px 0px 4px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -1px -1px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    margin-top: 7px;
+    font-family: 'penny';
+    font-size: 14px;
+    color:#f79fce;
+}
+
+#glow{
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #FFA4C8, -1px -1px 0px #FFA4C8, 1px -1px 0px #FFA4C8, -1px 1px 0px #FFA4C8, 0px 0px 3px #FFA4C8, 0px 0px 4px #FFA4C8;
 }
