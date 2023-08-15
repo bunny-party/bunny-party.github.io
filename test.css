@@ -384,6 +384,36 @@ body {
     color:#f79fce;
 }
 
+.RINmb{
+    background: #fff;
+    width: 98%; 
+    height: 95.5%;
+    border: 1px solid #f79fce;
+    border-left: 3px double #fa84c3;
+    border-right: 3px double #fa84c3;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 4px 0px 4px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -1px -1px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    font-family: 'penny';
+    font-size: 14px;
+    color:#f79fce;
+    overflow: hidden;
+}
+
+.RINmb img{
+    height: 100%;
+    transition: ease-in-out 0.4s;
+}
+
+#buttons img{
+    height: 43px;
+}
+
+/*.RINmb img:hover{
+    height: 150%;
+    transition: ease-in-out 0.4s;
+}*/
+
 #glowB{
     color: #fff;
     text-shadow: 1px 1px 0px #FFA4C8, -1px -1px 0px #FFA4C8, 1px -1px 0px #FFA4C8, -1px 1px 0px #FFA4C8, 0px 0px 3px #FFA4C8, 0px 0px 4px #FFA4C8;
@@ -399,6 +429,24 @@ body {
 c{
     font-family: 'mochiy';
     font-size: 11px;
+}
+
+a{
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    transition: ease-in-out 0.4s;
+}
+
+a:hover{
+    color: #fff;
+    transition: ease-in-out 0.2s;
+    cursor: url("/img/rose2.cur"), pointer !important;
+    text-shadow: 1px 1px 0px #FFA4C8, -1px -1px 0px #FFA4C8, 1px -1px 0px #FFA4C8, -1px 1px 0px #FFA4C8, 0px 0px 3px #FFA4C8, 0px 0px 4px #FFA4C8;
+}
+
+.pix{
+    image-rendering: pixelated;
 }
 
 .tippy-box[data-theme~='tomato'] {
@@ -423,4 +471,30 @@ c{
   }
   .tippy-box[data-theme~='tomato'][data-placement^='right'] > .tippy-arrow::before {
     border-right-color: #fff;
+}
+
+.tippy-box[data-theme~='stamp'] {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #f79fce;
+    text-align: center;
+    border-radius: 20px / 30%;
+    border: 2px ridge #ffaed9e0;
+    border-top: 2px groove #ffaed9e0;
+    border-left: 4px groove #ffaed9e0;
+    border-right: 4px ridge #ffaed9e0;
+    padding: 0px 5px;
+    padding-bottom: 0px;
+}
+
+.tippy-box[data-theme~='stamp'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #fff;
   }
+  .tippy-box[data-theme~='stamp'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #fff;
+  }
+  .tippy-box[data-theme~='stamp'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: #fff;
+  }
+  .tippy-box[data-theme~='stamp'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: #fff;
+}
