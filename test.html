@@ -7,31 +7,14 @@
    <link rel="icon" href="favicon.ico" type="image/x-icon">
    <link rel='stylesheet' type='text/css' href='/test.css'>
    <link href="/fonts.css" rel="stylesheet" type="text/css" media="all">
-   
-   <script>
-    // Array of frame URLs for the animated favicon
-    const frameUrls = [
-      '/img/deco/pbw1.png',
-      '/img/deco/pbw2.png',
-      '/img/deco/pbw3.png',
-      '/img/deco/pbw4.png',
-      // Add more frame URLs here
-];
-
-let currentFrameIndex = 0;
-
-function updateFavicon() {
-const newFaviconUrl = frameUrls[currentFrameIndex];
-const linkTag = document.querySelector("link[rel='icon']");
-
-linkTag.href = newFaviconUrl;
-
-currentFrameIndex = (currentFrameIndex + 1) % frameUrls.length;
-}
-
-// Start the animation
-setInterval(updateFavicon, 200); // Change interval as needed
-   </script>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away-subtle.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward-subtle.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/perspective-subtle.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/border.css"/>
 </head>
 
 <body>
@@ -95,18 +78,39 @@ setInterval(updateFavicon, 200); // Change interval as needed
               2023年08月13日
             </div>
 
-            <div class="RINl" style="padding:7.5px 8px 6.5px 8px;">
+            <div class="RINl" style="padding:1.5px 7px 5.8px 7px;font-size:20px">
+              <img src="/img/deco/lily2.gif" class="pix" style="height:auto;margin-right:3px;position:relative;top:2.7px;filter:brightness(1.5)"> 
               <span id="glow">bunny</span>
             </div>
 
             <div class="RINlb">
-              hello ! im bunny . im a 22-year -old disabled tgirl , a futch dyke & overall freak .
+              hello , im bunny ! im a 22-year -old disabled tgirl , a futch dyke & overall freak .
             </div>
             
-            <img src="/img/deco/unico4.png" id="sticker" style="height:120px;position:absolute;top:42px;left:-5px;transform:rotate(-5deg)">
+            <img src="/img/deco/unico4.png" id="sticker4">
           </div>
 
           <div class="rightINm">
+            <div class="RINm">
+              <div class="RINmin">
+              <span id="glow">name <c>:</c></span> bunny / lapine 
+              <img src="/img/deco/chihuahua.png" style="height:58px;float:right;" id="chihuahua">
+              <br><span id="glow">prns <c>:</c></span> she / her + <span id="neos" 
+              style="text-decoration:underline;text-decoration-style:wavy;">neos</span>
+
+              <p><span id="glow">more about me <c>:</c></span> im blind , and i use a screenreader <c>.</c> yes , this makes coding hard , 
+              but i know what im doing , ive been coding since i was very little <c>.</c> speaking of which <c>...</c> 
+                
+              
+              <p><span id="glow">my coding journey <c>:</c></span> my coding journey started on neopets in around 2009/2010 <c>.</c> 
+              i started out doing really shitty , awful HTML coding on my neopets' pet profile pages , and i spaghetti-coded my way into 
+
+              <!--<span style="border-right:2px dotted #f79fce;padding-right:5px;margin-right:5px">bunny</span>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="rightINb">
             aa
           </div>
         </div>
@@ -129,30 +133,75 @@ setInterval(updateFavicon, 200); // Change interval as needed
 
     <img src="/img/deco/charm.png" id="charm">
 
-    <script>
-      // script.js
-const images = document.querySelectorAll('.animate-image');
-
-const rotations = [89, 102, 97]; // Rotation angles for each image
-const rotations2 = [87, 95, 91]; // Second rotation angles for each image
-
-images.forEach((image, index) => {
-  image.addEventListener('mouseover', () => {
-    images.forEach((img, i) => {
-      img.style.transform = `rotate(${rotations[i]}deg) translateY(-50px)`;
-    });
-  });
-
-  image.addEventListener('mouseout', () => {
-    images.forEach((img, i) => {
-      img.style.transform = `rotate(${rotations2[i]}deg)`;
-    });
-  });
-});
-
-    </script>
-
   </div>
+
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script>
+  // With the above scripts loaded, you can call `tippy()` with a CSS
+  // selector and a `content` prop:
+  tippy('#chihuahua', {
+    content: 'woof !',
+    arrow: true,
+    animation: 'shift-toward-subtle',
+    theme: 'tomato',
+  });
+
+  tippy('#neos', {
+    content: 'im okay with really any neos as long as they\'re fun !',
+    // animateFill: true,
+    arrow: true,
+    animation: 'shift-toward-subtle',
+    theme: 'tomato',
+  });
+  </script>
+  
+  <script>
+    // script.js
+  const images = document.querySelectorAll('.animate-image');
+  
+  const rotations = [91, 102, 97]; // Rotation angles for each image
+  const rotations2 = [87, 95, 91]; // Second rotation angles for each image
+  
+  images.forEach((image, index) => {
+  image.addEventListener('mouseover', () => {
+  images.forEach((img, i) => {
+    img.style.transform = `rotate(${rotations[i]}deg) translateY(-50px)`;
+  });
+  });
+  
+  image.addEventListener('mouseout', () => {
+  images.forEach((img, i) => {
+    img.style.transform = `rotate(${rotations2[i]}deg)`;
+  });
+  });
+  });
+  
+  </script>
+  <script>
+    // Array of frame URLs for the animated favicon
+    const frameUrls = [
+      '/img/deco/pbw1.png',
+      '/img/deco/pbw2.png',
+      '/img/deco/pbw3.png',
+      '/img/deco/pbw4.png',
+      // Add more frame URLs here
+  ];
+  
+  let currentFrameIndex = 0;
+  
+  function updateFavicon() {
+  const newFaviconUrl = frameUrls[currentFrameIndex];
+  const linkTag = document.querySelector("link[rel='icon']");
+  
+  linkTag.href = newFaviconUrl;
+  
+  currentFrameIndex = (currentFrameIndex + 1) % frameUrls.length;
+  }
+  
+  // Start the animation
+  setInterval(updateFavicon, 200); // Change interval as needed
+   </script>
 </body>
 
 </html>

@@ -132,6 +132,21 @@ body {
   text-shadow: 1px 1px 2px #EEECE8;
 }
 
+#sticker4{
+    filter: drop-shadow(3px 0 0.5px white) drop-shadow(0 3px 0.5px white) drop-shadow(-3px 0 0.5px white) drop-shadow(0 -4px 0.5px white) drop-shadow(-0px 1px 1px rgba(168, 144, 157, 1));
+    text-shadow: 1px 1px 2px #EEECE8;
+    transform:rotate(-5deg);
+    transition: ease-in-out 0.6s;
+    height:120px;
+    position:absolute;
+    top:42px; left:-5px;
+}
+
+#sticker4:hover {
+    transform: rotate(-10deg);
+    transition: ease-in-out 0.6s;
+}
+
 #charm{
     height: 270px;
     position: relative;
@@ -253,9 +268,9 @@ body {
     width: 90.9%; 
     height: 93.4%;
     padding: 15px;
-    border: 1px outset rgb(168, 144, 157, 0.5);
+    border: 1px outset rgb(168, 144, 157, 0.4);
     border-radius: 4px 9px 9px 4px;
-    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.4), 5px 0px 5px rgb(168, 144, 157, 0.1), -1px -1px 1px rgb(168, 144, 157, 0.3), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    box-shadow: /*1px 1px 2px rgb(168, 144, 157, 0.4), 5px 0px 5px rgb(168, 144, 157, 0.1), -1px -1px 1px rgb(168, 144, 157, 0.3),*/ inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
     z-index: 8;
 }
 
@@ -273,21 +288,6 @@ body {
     z-index: 8;
 }
 
-.rightINm{
-    background-image: url("/img/bg/pastelstarani.png");
-    background-position: center center;
-    width: 95%; 
-    height: 25%;
-    padding: 7px;
-    border: 2px ridge #ffaed9;
-    border-top: 2px groove #ffaed9;
-    border-left: 2px groove #ffaed9;
-    border-radius: 7px;
-    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 5px 0px 5px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
-    z-index: 8;
-    margin-top: 15px;
-}
-
 .RINl{
     float: right;
     background: #fff;
@@ -301,13 +301,13 @@ body {
     box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 4px 0px 4px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -1px -1px 2px rgba(0,0,0,0.1);
     z-index: 8;
     margin-left: 7px;
-    font-family: 'daydream';
+    font-family: 'mochiy';
 }
 
 .RINlb{
     float: right;
     background: #fff;
-    width: 79%; 
+    width: 78%; 
     height: 49px;
     padding: 7px 5px 5px 22px;
     border: 1px solid #f79fce;
@@ -322,7 +322,105 @@ body {
     color:#f79fce;
 }
 
-#glow{
-    color: #ffffff;
+.rightINm{
+    background-image: url("/img/bg/pinkheartgingham.png");
+    background-position: center center;
+    width: 95%; 
+    height: 45%;
+    padding: 7px;
+    border: 3px ridge #ffaed9;
+    border-top: 3px groove #ffaed9;
+    border-left: 3px groove #ffaed9;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 5px 0px 5px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    margin-top: 15px;
+}
+
+.RINm{
+    background: #fff;
+    width: 98%; 
+    height: 198px;
+    border: 1px solid #f79fce;
+    border-left: 3px double #fa84c3;
+    border-right: 3px double #fa84c3;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 4px 0px 4px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -1px -1px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    font-family: 'penny';
+    font-size: 14px;
+    color:#f79fce;
+    overflow: hidden;
+}
+
+.RINmin{
+    background: #fff;
+    width: 96%; 
+    height: 191px;
+    padding: 5px 5px 2px 8px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 4px 0px 4px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -1px -1px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    font-family: 'penny';
+    font-size: 14px;
+    color:#f79fce;
+    overflow-y: scroll;
+}
+
+.rightINb{
+    background-image: url("/img/bg/pinkheartgingham.png");
+    background-position: center center;
+    width: 95%; 
+    height: 10%;
+    padding: 7px;
+    border: 3px ridge #ffaed9;
+    border-top: 3px groove #ffaed9;
+    border-left: 3px groove #ffaed9;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(168, 144, 157, 0.3), 5px 0px 5px rgb(168, 144, 157, 0.05), -1px -1px 1px rgb(168, 144, 157, 0.15), inset 2px 2px 2px rgba(255,255,255, 0.3), inset -2px -2px 2px rgba(0,0,0,0.1);
+    z-index: 8;
+    margin-top: 15px;
+    font-family: 'penny';
+    font-size: 14px;
+    color:#f79fce;
+}
+
+#glowB{
+    color: #fff;
     text-shadow: 1px 1px 0px #FFA4C8, -1px -1px 0px #FFA4C8, 1px -1px 0px #FFA4C8, -1px 1px 0px #FFA4C8, 0px 0px 3px #FFA4C8, 0px 0px 4px #FFA4C8;
 }
+
+#glow{
+    color: #fff;
+    text-shadow: 1px 1px 0px #FFA4C8, -1px -1px 0px #FFA4C8, 1px -1px 0px #FFA4C8, -1px 1px 0px #FFA4C8, 0px 0px 3px #FFA4C8, 0px 0px 4px #FFA4C8;
+    font-family: 'mochiy';
+    vertical-align: bottom;
+}
+
+c{
+    font-family: 'mochiy';
+    font-size: 11px;
+}
+
+.tippy-box[data-theme~='tomato'] {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #f79fce;
+    text-align: center;
+    border-radius: 30px / 40%;
+    border: 2px ridge #ffaed9e0;
+    border-top: 2px groove #ffaed9e0;
+    border-left: 4px groove #ffaed9e0;
+    border-right: 4px ridge #ffaed9e0;
+}
+
+.tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #fff;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #fff;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: #fff;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: #fff;
+  }

@@ -58,3 +58,15 @@
     font-family : 'cutie';
     src : url("/fonts/CutiePop.ttf");
 }
+@font-face{
+    font-family : 'hachi';
+    src : url("/fonts/HachiMaruPop-Regular.ttf");
+}
+@font-face{
+    font-family : 'mochiy';
+    src : url("/fonts/MochiyPopOne-Regular.ttf");
+}
+@font-face{
+    font-family : 'poprum';
+    src : url("/fonts/PopRumCute.otf");
+}
