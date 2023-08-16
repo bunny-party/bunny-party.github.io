@@ -23,11 +23,13 @@
       <div id="card">
         <div id="stitch">
           <div id="cardIN">
-            <div id="info">
-              Doggo ipsum big ol pupper. Shoob ruff doing me a frighten dat tungg tho many pats doge, shoober long bois much ruin diet borkf. 
-              Very hand that feed shibe borking doggo yapper puggorino woofer blop floofs, doggo long bois porgo length boy.  
-              Very hand that feed shibe adorable doggo ur givin me a spook, such treat. Length boy the neighborhood pupper much ruin diet fluffer, 
-              dat tungg tho. Shoob blep you are doing me the shock, snoot. You are doin me a concern doing me a frighten fat boi shoober, clouds.
+            <div id="info" style="letter-spacing:0px;">
+              <span id="glow" style="font-size:17.7px;padding-left:31px;">interests</span>
+
+              <p>HTMLCSS coding , old web exploring, digital art, neopets, homestuck , gyaru fashion ,  
+              <span id="madoka"><j>madoka</j></span> <span id="madoka"><j><span style="letter-spacing:-0.5px;">magica</j></span> , AC<c>:</c>NL</span>, 
+              decora <span style="padding-left:16px;">kei</span>, cult party kei, <span style="padding-left:17px;">silent hill</span> , 
+              <span id="resi"><j>resi</j></span>
             </div>
          </div>
         </div>
@@ -93,7 +95,7 @@
 
           <div class="rightINt">
             <div class="RINl" style="font-family:'sweet';padding-right:5px;color:#f79fce">
-              2023年08月13日
+              <span id="dynamic-date">YYYY年MM月DD日</span>
             </div>
 
             <div class="RINl" style="padding:1.5px 7px 5.8px 7px;font-size:20px">
@@ -114,11 +116,11 @@
               <span id="glow">name <c>:</c></span> bunny / lapine 
               <img src="/img/deco/chihuahua.png" style="height:58px;float:right;" id="chihuahua">
               <br><span id="glow">prns <c>:</c></span> she / her + <span id="neos" 
-              style="text-decoration:underline;text-decoration-style:wavy;">neos</span>
+              style="text-decoration:underline;text-decoration-style:wavy;text-decoration-color:#ffc3d8;">neos</span>
 
-              <p><span id="glow">more about me <c>:</c></span> im a trans girl, i also use xenogenders <c>.</c> i put all of those somewhere else , 
-              so they're not clogging up this page <c>. (</c> they're just a casual thing for me , for fun more than for serious identity 
-              reasons <c>. )</c>
+              <p><span id="glow">more about me <c>:</c></span> im a trans girl, i also use xenogenders <c>.</c> i put all of those 
+              <a href="/labels.html">somewhere else</a> , so they're not clogging up this page <c>. 
+              (</c> they're just a casual thing for me , for fun more than for serious identity reasons <c>. )</c>
 
               <p>im permanently nonverbal and an AAC device user , which is why my punctuation is a bit strange <c>.</c> you can learn more 
               about AAC devices <a href="https://www.assistiveware.com/learn-aac/what-is-aac">here</a> <c>.</c>
@@ -129,7 +131,7 @@
 
               <p>i am the host of a dissociative system ! you can learn more about the other members <a href="/system.html">here</a> <c>.</c>
               
-              <p>im blind , and i use a screenreader <c>.</c> yes , this makes coding hard , 
+              <p>im <span style="letter-spacing:-0.15px;">blind , and i use a screenreader</span><c>.</c> yes , this makes coding hard , 
               but i know what im doing , ive been coding since i was very little <c>.</c> speaking of which <c>...</c>
 
               
@@ -196,6 +198,20 @@
   tippy('#neos', {
     content: 'im okay with really any neos as long as they\'re fun !',
     // animateFill: true,
+    arrow: true,
+    animation: 'shift-toward-subtle',
+    theme: 'tomato',
+  });
+
+  tippy('#madoka', {
+    content: 'im new to the series , though !',
+    arrow: true,
+    animation: 'shift-toward-subtle',
+    theme: 'tomato',
+  });
+
+  tippy('#resi', {
+    content: 'as in resident evil !',
     arrow: true,
     animation: 'shift-toward-subtle',
     theme: 'tomato',
@@ -281,21 +297,21 @@
     allowHTML: true,
   });
 
-//  tippy('#quiz11', {
+  tippy('#quiz11', {
 //    content: '<img src="/img/quiz/AAA" width="auto">',
 //    arrow: true,
 //    animation: 'shift-toward-subtle',
 //    theme: 'stamp',
 //    allowHTML: true,
-//  });
+  });
 
-//  tippy('#quiz12', {
+  tippy('#quiz12', {
 //    content: '<img src="/img/quiz/AAA" width="auto">',
 //    arrow: true,
 //    animation: 'shift-toward-subtle',
 //    theme: 'stamp',
 //    allowHTML: true,
-//  });
+  });
   </script>
   
   <script>
@@ -343,7 +359,25 @@
   
   // Start the animation
   setInterval(updateFavicon, 200); // Change interval as needed
-   </script>
+  </script>
+
+<script>
+  function updateDate() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = (now.getMonth() + 1).toString().padStart(2, '0');
+      const day = now.getDate().toString().padStart(2, '0');
+  
+      const dateElement = document.getElementById('dynamic-date');
+      dateElement.textContent = `${year}年${month}月${day}日`;
+  }
+  
+  // Update the date immediately on page load
+  window.onload = updateDate;
+  
+  // Update the date every day at midnight (00:00)
+  setInterval(updateDate, 86400000); // 86400000 milliseconds = 24 hours
+</script>
 </body>
 
 </html>

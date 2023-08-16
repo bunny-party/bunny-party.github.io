@@ -310,9 +310,11 @@ body {
     background-image: url("/img/deco/notebookside.png");
     background-size: 100% 340px;
     width: 30px;
-    height: 480px;
+    height: 481px;
     position: absolute;
     top: 13px; left: -10px;
+    border-radius: 0px 0px 0px 4px;
+    border-bottom-right-radius: 40px 10px;
 }
 
 .rightINt{
@@ -474,10 +476,17 @@ c{
     font-size: 11px;
 }
 
+j{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #ffc3d8;
+}
+
 a{
     color: inherit;
     text-decoration: underline;
     text-decoration-style: wavy;
+    text-decoration-color: #ffc3d8;
     transition: ease-in-out 0.4s;
 }
 
@@ -485,6 +494,8 @@ a:hover{
     color: #fff;
     transition: ease-in-out 0.2s;
     cursor: url("/img/rose2.cur"), pointer !important;
+    text-decoration-color: #fff;
+    font-weight: bold;
     text-shadow: 1px 1px 0px #FFA4C8, -1px -1px 0px #FFA4C8, 1px -1px 0px #FFA4C8, -1px 1px 0px #FFA4C8, 0px 0px 3px #FFA4C8, 0px 0px 4px #FFA4C8;
 }
 
