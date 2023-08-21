@@ -26,10 +26,10 @@
     
     .pageHeader{
     background-color : #fff;
-    background-image : url("/img/angelsdither.png");
-    background-size : contain;
-    background-position : left center;
-    background-repeat: no-repeat;
+    background-image : url("/img/bg/sunflowerhorz.png"), url("/img/angelsdither.png");
+    background-size : 18%, contain;
+    background-position : top right, left center;
+    background-repeat: no-repeat, no-repeat;
     float : left;
     clear : none;
     height : 200px;
